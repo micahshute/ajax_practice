@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="/scripts.js"></script>
+    <script>
+        window.onload = function(){
+            getBrowser();
+            window.http = setupRequest();
+            console.log("here i am");
+        }
+        
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="browser">Your browser is </p>
+    <div id="target">
+        <p>Original text</p>
+    </div>
+    <input type="submit" value="AJAX" onclick="return retrieveData('/data.txt', 'target', window.http)">
+</body>
+</html>
