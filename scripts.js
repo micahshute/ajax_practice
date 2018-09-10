@@ -14,10 +14,11 @@ function getBrowser(){
     var appName = navigator.appName;
     var platform = navigator.platform;
     var browser;
-    if(userAgent.indexOf("Chrome") > -1){
-        browser = "Chrome"
-    }else if(userAgent.indexOf("Edge") > -1){
+
+    if(userAgent.indexOf("Edge") > -1){
         browser = "Microsoft Edge"
+    }else if(userAgent.indexOf("Chrome") > -1){
+        browser = "Chrome"
     }else if(userAgent.indexOf("Safari") > -1){
         browser = "Safari"
     }else if(userAgent.indexOf("IE") > -1){
